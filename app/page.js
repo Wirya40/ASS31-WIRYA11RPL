@@ -111,23 +111,7 @@ export default function StudentsPage() {
       title: "Actions",
       render: (_, record) => (
         <>
-          <Button type="link" onClick={() => openModal(record)}>
-            Edit
-          </Button>
-          <Popconfirm
-            title="Are you sure to delete?"
-            onConfirm={() => handleDelete(record.id)}
-          >
-            <Button danger type="link">
-              Delete
-            </Button>
-          </Popconfirm>
-          <Button
-            type="link"
-            onClick={() => router.push(`/students/${record.id}`)}
-          >
-            View Detail
-          </Button>
+         
         </>
       ),
     },
@@ -142,7 +126,7 @@ export default function StudentsPage() {
 
   return (
     <div style={{ padding: 24 }}>
-      <h1>Student Management</h1>
+      <h1>Data Murid</h1>
       <Button
         type="primary"
         onClick={() => openModal()}
